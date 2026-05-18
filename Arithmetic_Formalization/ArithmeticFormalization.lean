@@ -154,6 +154,9 @@ def addTable : Digit → Digit → Digit × Bool
   | ⟨9, _⟩, ⟨7, _⟩ => (⟨6, by omega⟩, true)
   | ⟨9, _⟩, ⟨8, _⟩ => (⟨7, by omega⟩, true)
   | ⟨9, _⟩, ⟨9, _⟩ => (⟨8, by omega⟩, true)
+  -- The cases below are mathematically impossible:
+  -- a Fin 10 value is always less than 10 by definition
+  -- absurd derives anything from the contradictory hypothesis
   | ⟨n+10, h⟩, _ => absurd h (by omega)
   | _, ⟨n+10, h⟩ => absurd h (by omega)
 
@@ -189,16 +192,13 @@ theorem addDigits_correct (a b : Digit) (carry : Bool) :
     a.val + b.val + carryVal carry := by
   have h1 := addTable_correct a b
   have h2 := addTable_correct (addTable a b).1 ⟨1, by omega⟩
-  unfold addDigits
-  cases carry <;>
-  cases (addTable a b).2 <;>
-  cases (addTable (addTable a b).1 ⟨1, by omega⟩).2 <;>
-  simp_all [carryVal, addTable] <;>
-  omega
+  fin_cases a <;> fin_cases b <;> cases carry <;>
+  simp_all [addDigits, addTable, carryVal]
 
 --Now that we have a verified method to add two digits along with a carry
 --it is just needed to extend it to column wise addition
 --mimicking the way we do it with pen and paper
+
 def verticalAdd : MultiDigit → MultiDigit → Bool → MultiDigit
   -- Base Case: Both numbers are exhausted and there is no remaining carry.
   | [], [], false => []
@@ -292,5 +292,3 @@ theorem verticalAdd_correct (a b : MultiDigit) (carry : Bool) :
 theorem toNat_nonnegative (xs : MultiDigit) :
     0 ≤ toNat xs := by
   omega
-
---check
