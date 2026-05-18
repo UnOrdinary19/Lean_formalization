@@ -52,44 +52,149 @@ def carryVal : Bool → Nat
 @[simp] theorem carryVal_false : carryVal false = 0 := rfl
 @[simp] theorem carryVal_bound (c : Bool) : carryVal c ≤ 1 := by
   cases c <;> simp [carryVal]
+--We shall first list the possible two digit addditions and their results
+def addTable : Digit → Digit → Digit × Bool
+  | ⟨0, _⟩, ⟨0, _⟩ => (⟨0, by omega⟩, false)
+  | ⟨0, _⟩, ⟨1, _⟩ => (⟨1, by omega⟩, false)
+  | ⟨0, _⟩, ⟨2, _⟩ => (⟨2, by omega⟩, false)
+  | ⟨0, _⟩, ⟨3, _⟩ => (⟨3, by omega⟩, false)
+  | ⟨0, _⟩, ⟨4, _⟩ => (⟨4, by omega⟩, false)
+  | ⟨0, _⟩, ⟨5, _⟩ => (⟨5, by omega⟩, false)
+  | ⟨0, _⟩, ⟨6, _⟩ => (⟨6, by omega⟩, false)
+  | ⟨0, _⟩, ⟨7, _⟩ => (⟨7, by omega⟩, false)
+  | ⟨0, _⟩, ⟨8, _⟩ => (⟨8, by omega⟩, false)
+  | ⟨0, _⟩, ⟨9, _⟩ => (⟨9, by omega⟩, false)
+  | ⟨1, _⟩, ⟨0, _⟩ => (⟨1, by omega⟩, false)
+  | ⟨1, _⟩, ⟨1, _⟩ => (⟨2, by omega⟩, false)
+  | ⟨1, _⟩, ⟨2, _⟩ => (⟨3, by omega⟩, false)
+  | ⟨1, _⟩, ⟨3, _⟩ => (⟨4, by omega⟩, false)
+  | ⟨1, _⟩, ⟨4, _⟩ => (⟨5, by omega⟩, false)
+  | ⟨1, _⟩, ⟨5, _⟩ => (⟨6, by omega⟩, false)
+  | ⟨1, _⟩, ⟨6, _⟩ => (⟨7, by omega⟩, false)
+  | ⟨1, _⟩, ⟨7, _⟩ => (⟨8, by omega⟩, false)
+  | ⟨1, _⟩, ⟨8, _⟩ => (⟨9, by omega⟩, false)
+  | ⟨1, _⟩, ⟨9, _⟩ => (⟨0, by omega⟩, true)
+  | ⟨2, _⟩, ⟨0, _⟩ => (⟨2, by omega⟩, false)
+  | ⟨2, _⟩, ⟨1, _⟩ => (⟨3, by omega⟩, false)
+  | ⟨2, _⟩, ⟨2, _⟩ => (⟨4, by omega⟩, false)
+  | ⟨2, _⟩, ⟨3, _⟩ => (⟨5, by omega⟩, false)
+  | ⟨2, _⟩, ⟨4, _⟩ => (⟨6, by omega⟩, false)
+  | ⟨2, _⟩, ⟨5, _⟩ => (⟨7, by omega⟩, false)
+  | ⟨2, _⟩, ⟨6, _⟩ => (⟨8, by omega⟩, false)
+  | ⟨2, _⟩, ⟨7, _⟩ => (⟨9, by omega⟩, false)
+  | ⟨2, _⟩, ⟨8, _⟩ => (⟨0, by omega⟩, true)
+  | ⟨2, _⟩, ⟨9, _⟩ => (⟨1, by omega⟩, true)
+  | ⟨3, _⟩, ⟨0, _⟩ => (⟨3, by omega⟩, false)
+  | ⟨3, _⟩, ⟨1, _⟩ => (⟨4, by omega⟩, false)
+  | ⟨3, _⟩, ⟨2, _⟩ => (⟨5, by omega⟩, false)
+  | ⟨3, _⟩, ⟨3, _⟩ => (⟨6, by omega⟩, false)
+  | ⟨3, _⟩, ⟨4, _⟩ => (⟨7, by omega⟩, false)
+  | ⟨3, _⟩, ⟨5, _⟩ => (⟨8, by omega⟩, false)
+  | ⟨3, _⟩, ⟨6, _⟩ => (⟨9, by omega⟩, false)
+  | ⟨3, _⟩, ⟨7, _⟩ => (⟨0, by omega⟩, true)
+  | ⟨3, _⟩, ⟨8, _⟩ => (⟨1, by omega⟩, true)
+  | ⟨3, _⟩, ⟨9, _⟩ => (⟨2, by omega⟩, true)
+  | ⟨4, _⟩, ⟨0, _⟩ => (⟨4, by omega⟩, false)
+  | ⟨4, _⟩, ⟨1, _⟩ => (⟨5, by omega⟩, false)
+  | ⟨4, _⟩, ⟨2, _⟩ => (⟨6, by omega⟩, false)
+  | ⟨4, _⟩, ⟨3, _⟩ => (⟨7, by omega⟩, false)
+  | ⟨4, _⟩, ⟨4, _⟩ => (⟨8, by omega⟩, false)
+  | ⟨4, _⟩, ⟨5, _⟩ => (⟨9, by omega⟩, false)
+  | ⟨4, _⟩, ⟨6, _⟩ => (⟨0, by omega⟩, true)
+  | ⟨4, _⟩, ⟨7, _⟩ => (⟨1, by omega⟩, true)
+  | ⟨4, _⟩, ⟨8, _⟩ => (⟨2, by omega⟩, true)
+  | ⟨4, _⟩, ⟨9, _⟩ => (⟨3, by omega⟩, true)
+  | ⟨5, _⟩, ⟨0, _⟩ => (⟨5, by omega⟩, false)
+  | ⟨5, _⟩, ⟨1, _⟩ => (⟨6, by omega⟩, false)
+  | ⟨5, _⟩, ⟨2, _⟩ => (⟨7, by omega⟩, false)
+  | ⟨5, _⟩, ⟨3, _⟩ => (⟨8, by omega⟩, false)
+  | ⟨5, _⟩, ⟨4, _⟩ => (⟨9, by omega⟩, false)
+  | ⟨5, _⟩, ⟨5, _⟩ => (⟨0, by omega⟩, true)
+  | ⟨5, _⟩, ⟨6, _⟩ => (⟨1, by omega⟩, true)
+  | ⟨5, _⟩, ⟨7, _⟩ => (⟨2, by omega⟩, true)
+  | ⟨5, _⟩, ⟨8, _⟩ => (⟨3, by omega⟩, true)
+  | ⟨5, _⟩, ⟨9, _⟩ => (⟨4, by omega⟩, true)
+  | ⟨6, _⟩, ⟨0, _⟩ => (⟨6, by omega⟩, false)
+  | ⟨6, _⟩, ⟨1, _⟩ => (⟨7, by omega⟩, false)
+  | ⟨6, _⟩, ⟨2, _⟩ => (⟨8, by omega⟩, false)
+  | ⟨6, _⟩, ⟨3, _⟩ => (⟨9, by omega⟩, false)
+  | ⟨6, _⟩, ⟨4, _⟩ => (⟨0, by omega⟩, true)
+  | ⟨6, _⟩, ⟨5, _⟩ => (⟨1, by omega⟩, true)
+  | ⟨6, _⟩, ⟨6, _⟩ => (⟨2, by omega⟩, true)
+  | ⟨6, _⟩, ⟨7, _⟩ => (⟨3, by omega⟩, true)
+  | ⟨6, _⟩, ⟨8, _⟩ => (⟨4, by omega⟩, true)
+  | ⟨6, _⟩, ⟨9, _⟩ => (⟨5, by omega⟩, true)
+  | ⟨7, _⟩, ⟨0, _⟩ => (⟨7, by omega⟩, false)
+  | ⟨7, _⟩, ⟨1, _⟩ => (⟨8, by omega⟩, false)
+  | ⟨7, _⟩, ⟨2, _⟩ => (⟨9, by omega⟩, false)
+  | ⟨7, _⟩, ⟨3, _⟩ => (⟨0, by omega⟩, true)
+  | ⟨7, _⟩, ⟨4, _⟩ => (⟨1, by omega⟩, true)
+  | ⟨7, _⟩, ⟨5, _⟩ => (⟨2, by omega⟩, true)
+  | ⟨7, _⟩, ⟨6, _⟩ => (⟨3, by omega⟩, true)
+  | ⟨7, _⟩, ⟨7, _⟩ => (⟨4, by omega⟩, true)
+  | ⟨7, _⟩, ⟨8, _⟩ => (⟨5, by omega⟩, true)
+  | ⟨7, _⟩, ⟨9, _⟩ => (⟨6, by omega⟩, true)
+  | ⟨8, _⟩, ⟨0, _⟩ => (⟨8, by omega⟩, false)
+  | ⟨8, _⟩, ⟨1, _⟩ => (⟨9, by omega⟩, false)
+  | ⟨8, _⟩, ⟨2, _⟩ => (⟨0, by omega⟩, true)
+  | ⟨8, _⟩, ⟨3, _⟩ => (⟨1, by omega⟩, true)
+  | ⟨8, _⟩, ⟨4, _⟩ => (⟨2, by omega⟩, true)
+  | ⟨8, _⟩, ⟨5, _⟩ => (⟨3, by omega⟩, true)
+  | ⟨8, _⟩, ⟨6, _⟩ => (⟨4, by omega⟩, true)
+  | ⟨8, _⟩, ⟨7, _⟩ => (⟨5, by omega⟩, true)
+  | ⟨8, _⟩, ⟨8, _⟩ => (⟨6, by omega⟩, true)
+  | ⟨8, _⟩, ⟨9, _⟩ => (⟨7, by omega⟩, true)
+  | ⟨9, _⟩, ⟨0, _⟩ => (⟨9, by omega⟩, false)
+  | ⟨9, _⟩, ⟨1, _⟩ => (⟨0, by omega⟩, true)
+  | ⟨9, _⟩, ⟨2, _⟩ => (⟨1, by omega⟩, true)
+  | ⟨9, _⟩, ⟨3, _⟩ => (⟨2, by omega⟩, true)
+  | ⟨9, _⟩, ⟨4, _⟩ => (⟨3, by omega⟩, true)
+  | ⟨9, _⟩, ⟨5, _⟩ => (⟨4, by omega⟩, true)
+  | ⟨9, _⟩, ⟨6, _⟩ => (⟨5, by omega⟩, true)
+  | ⟨9, _⟩, ⟨7, _⟩ => (⟨6, by omega⟩, true)
+  | ⟨9, _⟩, ⟨8, _⟩ => (⟨7, by omega⟩, true)
+  | ⟨9, _⟩, ⟨9, _⟩ => (⟨8, by omega⟩, true)
+  | ⟨n+10, h⟩, _ => absurd h (by omega)
+  | _, ⟨n+10, h⟩ => absurd h (by omega)
 
 def addDigits (a b : Digit) (carry : Bool) : Digit × Bool :=
-  let sum := a.val + b.val + carryVal carry
-  --Proving an upperbound for sum
-  have hsum : sum ≤ 19 := by
-    have ha := a.isLt  -- a.val < 10
-    have hb := b.isLt  -- b.val < 10
-    -- carryVal carry ≤ 1 by carryVal_bound
-    -- so sum ≤ 9 + 9 + 1 = 19
-    have hc := carryVal_bound carry
-    omega
-  -- if sum < 10 no carry needed, otherwise carry 1 to next column
-  if h : sum < 10
-  --h serves as a proof that sum<10(if evaluated to true) and can be used subsequently
-  then (⟨sum, h⟩, false)
-  else (⟨sum - 10, by omega⟩, true)
-
+  -- First look up a + b in the addition table
+  let (sum, c1) := addTable a b
+  -- If no incoming carry we are done
+  match carry with
+  | false => (sum, c1)
+  | true =>
+    -- Incoming carry: look up sum + 1 in the table
+    let (sum', c2) := addTable sum ⟨1, by omega⟩
+    -- Carry out if either addition produced a carry
+    (sum', c1 || c2)
 --A few Testcases
 #eval addDigits ⟨7, by omega⟩ ⟨8, by omega⟩ false  -- 7+8=15, expect (5, true)
 #eval addDigits ⟨3, by omega⟩ ⟨4, by omega⟩ false  -- 3+4=7, expect (7, false)
 #eval addDigits ⟨9, by omega⟩ ⟨9, by omega⟩ true   -- 9+9+1=19, expect (9, true)
 
 --Correctness Proof
+--We shall first prove that the table is correct
+theorem addTable_correct (a b : Digit) :
+    (addTable a b).1.val + 10 * carryVal (addTable a b).2 =
+    a.val + b.val := by
+  fin_cases a <;> fin_cases b <;> simp [addTable, carryVal]
+  --fin_cases a expands into all 10 possible values of a. Then fin_cases b for each —
+  --giving 100 cases total. simp [addTable, carryVal] closes each one by
+  --just looking up the table entry.
+
 theorem addDigits_correct (a b : Digit) (carry : Bool) :
     (addDigits a b carry).1.val +
     10 * carryVal (addDigits a b carry).2 =
     a.val + b.val + carryVal carry := by
-  have ha := a.isLt
-  have hb := b.isLt
-  have hc := carryVal_bound carry
+  have h1 := addTable_correct a b
+  have h2 := addTable_correct (addTable a b).1 ⟨1, by omega⟩
   unfold addDigits
-  --unfold replaces (addDigits a b carry) in the goal with its definition body
-  simp only [carryVal]
-  split_ifs with h <;>
-  --splits proof into case carry=true (sum≥10) and carry=false (sum<10)
-  --in each case carryVal reduces to its concrete value (0 or 1)
-  --allowing omega to close the arithmetic goal
-  simp_all [carryVal] <;> omega
+  cases carry <;>
+  cases (addTable a b).2 <;>
+  cases (addTable (addTable a b).1 ⟨1, by omega⟩).2 <;>
+  simp_all [carryVal, addTable] <;>
+  omega
 
 --Now that we have a verified method to add two digits along with a carry
 --it is just needed to extend it to column wise addition
