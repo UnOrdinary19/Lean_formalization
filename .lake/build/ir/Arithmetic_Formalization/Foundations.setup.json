@@ -1,0 +1,11 @@
+{"plugins": [],
+ "package": "Arithmetic_Formalization",
+ "options":
+ {"weak.linter.mathlibStandardSet": true,
+  "relaxedAutoImplicit": false,
+  "pp.unicode.fun": true,
+  "maxSynthPendingDepth": 3},
+ "name": "Arithmetic_Formalization.Foundations",
+ "isModule": false,
+ "importArts": {},
+ "dynlibs": []}

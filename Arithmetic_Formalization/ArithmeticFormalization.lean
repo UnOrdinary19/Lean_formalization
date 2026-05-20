@@ -215,6 +215,11 @@ def verticalAdd : MultiDigit → MultiDigit → Bool → MultiDigit
   -- Extension Case (Right): Second list is longer.
   -- We continue adding the carry to the remaining digits of 'b'.
   | [], b :: bs, c =>
+  -- Lean syntax note: 'b :: bs' is list pattern matching notation
+  -- It matches a non-empty list, binding the first element (head) to 'b'
+  -- and the remaining elements (tail) to 'bs'
+  -- So this case matches when the first number is empty
+  -- and the second number has at least one digit 'b' followed by remaining digits 'bs'
       let (d, c') := addDigits ⟨0, by omega⟩ b c
       d :: verticalAdd [] bs c'
   -- Extension Case (Left): First list is longer.
@@ -469,6 +474,12 @@ def verticalSub : MultiDigit → MultiDigit → Bool → MultiDigit
       -- Return empty list as sentinel for undefined result
       []
   | a :: as, [], borrow =>
+  --Lean syntax note:
+  -- 'a :: as' means a list with head 'a' and tail 'as'
+  -- [] means an empty list
+  -- So '| a :: as, [], borrow =>' matches when
+  -- the first number has at least one digit (head 'a', rest 'as')
+  -- and the second number is empty
       -- Second number exhausted, first still has digits
       -- Subtract 0 from remaining digits of a, propagating borrow
       let (d, borrow') := subDigits a ⟨0, by omega⟩ borrow
