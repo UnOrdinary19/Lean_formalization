@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Arithmetic_Formalization.Foundations
-// Imports: public import Init
+// Imports: public import Init public import Mathlib.Tactic
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -143,12 +143,16 @@ return x_6;
 }
 }
 lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_mathlib_Mathlib_Tactic(uint8_t builtin);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_Arithmetic__Formalization_Arithmetic__Formalization_Foundations(uint8_t builtin) {
 lean_object * res;
 if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
 _G_initialized = true;
 res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_mathlib_Mathlib_Tactic(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));
