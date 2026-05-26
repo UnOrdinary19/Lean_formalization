@@ -230,35 +230,32 @@ def mulHelper (a : MultiDigit) (b : MultiDigit) (acc : MultiDigit) : MultiDigit 
     -- 1. Multiply the current shifted 'a' by the single multiplier digit 'd'
     -- We pass an initial digit carry of 0 matching mulDigit definition
     let row := mulDigit a d ⟨0, by omega⟩
-
     -- 2. Add this row to our running total using  verticalAdd with an initial carry of false
     let newAcc := verticalAdd acc row false
-
     -- 3. Shift 'a' left by a factor of 10 for the next place-value position.
     -- Prepending 0 to a LSB first list multiplies its total value by 10.
     let shiftedA := ⟨0, by omega⟩ :: a
-
     -- 4. Recurse into the remaining digits of the multiplier
     mulHelper shiftedA ds newAcc
 
 -- The top-level multiplication
-def mulActual (a b : MultiDigit) : MultiDigit :=
+def verticalMul (a b : MultiDigit) : MultiDigit :=
   mulHelper a b []
 
 -- Test Case 1: 123 × 891 = 109593
-#eval toNat (mulActual
+#eval toNat (verticalMul
   [⟨3, by omega⟩, ⟨2, by omega⟩, ⟨1, by omega⟩]   -- 123
   [⟨1, by omega⟩, ⟨9, by omega⟩, ⟨8, by omega⟩])  -- 891
 -- Expects: 109593
 
 -- Test Case 2: 99 × 9 = 891
-#eval toNat (mulActual
+#eval toNat (verticalMul
   [⟨9, by omega⟩, ⟨9, by omega⟩]                 -- 99
   [⟨9, by omega⟩])                               -- 9
 -- Expects: 891
 
 -- Test Case 3: 456 × 0 = 0
-#eval toNat (mulActual
+#eval toNat (verticalMul
   [⟨6, by omega⟩, ⟨5, by omega⟩, ⟨4, by omega⟩]   -- 456
   [])                                            -- 0 (Empty list representation)
 -- Expects: 0
@@ -300,6 +297,6 @@ theorem mulHelper_correct (a b : MultiDigit) (acc : MultiDigit) :
 -- Main correctness theorem
 -- mulActual is just mulHelper with empty accumulator
 -- toNat [] = 0 so the accumulator term vanishes
-theorem mulActual_correct (a b : MultiDigit) :
-    toNat (mulActual a b) = toNat a * toNat b := by
-  simp [mulActual, mulHelper_correct, toNat]
+theorem verticalMul_correct (a b : MultiDigit) :
+    toNat (verticalMul a b) = toNat a * toNat b := by
+  simp [verticalMul, mulHelper_correct, toNat]
