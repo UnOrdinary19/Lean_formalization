@@ -153,60 +153,6 @@ def additionDisplay (a b : MultiDigit) : Html :=
   [⟨9, by omega⟩, ⟨9, by omega⟩]
   [⟨1, by omega⟩]
 
--- Highlighted digit box for the active column
-def digitBoxActive (d : Nat) : Html :=
-  Html.element "div"
-    #[("style", json% {
-      display: "inline-block",
-      border: "2px solid yellow",
-      width: "40px",
-      height: "40px",
-      textAlign: "center",
-      lineHeight: "40px",
-      fontSize: "20px",
-      color: "yellow",
-      margin: "3px",
-      backgroundColor: "black"
-    })]
-    #[Html.text s!"{d}"]
-
--- Grayed out digit box for inactive columns
-def digitBoxInactive (d : Nat) : Html :=
-  Html.element "div"
-    #[("style", json% {
-      display: "inline-block",
-      border: "2px solid gray",
-      width: "40px",
-      height: "40px",
-      textAlign: "center",
-      lineHeight: "40px",
-      fontSize: "20px",
-      color: "gray",
-      margin: "3px",
-      backgroundColor: "black"
-    })]
-    #[Html.text s!"{d}"]
-
--- Render a number row with column highlighting
--- step = which column is currently active (0 = rightmost)
-def numberRowStepped (a : MultiDigit) (step : Nat) : Html :=
-  let maxIdx := a.length - 1
-  let boxes := (a.reverse.mapIdx (fun i d =>
-    -- convert display index to list index
-    let listIdx := maxIdx - i
-    if listIdx = step
-    then digitBoxActive d.val
-    else digitBoxInactive d.val)).toArray
-  Html.element "div"
-    #[("style", json% {
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "flex-end"
-    })]
-    boxes
-
-#html numberRowStepped (fromNat 123) 1
-
 -- Result box showing computed digit
 def resultBoxComputed (d : Nat) : Html :=
   Html.element "div"
@@ -270,10 +216,6 @@ def getCarryAt (a b : MultiDigit) (k : Nat) : Bool :=
 
 -- carry into column 2 = true (2+9=11, carry out)
 #eval getCarryAt (fromNat 123) (fromNat 91) 2  -- expect true
-
--- Compute toNat of first n digits of a MultiDigit number
-def toNatPrefix (a : MultiDigit) (n : Nat) : Nat :=
-  toNat (a.take n)
 
 -- Invariant panel showing the key relationship at each step
 -- Invariant: a[0..k-1] + b[0..k-1] = result[0..k-1] + carry × 10^k

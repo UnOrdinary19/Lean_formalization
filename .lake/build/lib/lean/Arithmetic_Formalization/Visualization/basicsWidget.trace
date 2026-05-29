@@ -1,9 +1,9 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["3f448d8f27ff01d7.olean"],
-  "i": "10496f4e3d3e16cb.ilean",
-  "c": "734d678eb5390a6d.c"},
+ {"o": ["74007fedde720716.olean"],
+  "i": "806d01b35fb42075.ilean",
+  "c": "d66a1a55b9e0f0c8.c"},
  "log":
  [{"message":
    ".> LEAN_PATH=C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\build\\lib\\lean c:\\Users\\Anubhav\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\bin\\lean.exe C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\Arithmetic_Formalization\\Visualization\\basicsWidget.lean -o C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\build\\lib\\lean\\Arithmetic_Formalization\\Visualization\\basicsWidget.olean -i C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\build\\lib\\lean\\Arithmetic_Formalization\\Visualization\\basicsWidget.ilean -c C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\build\\ir\\Arithmetic_Formalization\\Visualization\\basicsWidget.c --setup C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\.lake\\build\\ir\\Arithmetic_Formalization\\Visualization\\basicsWidget.setup.json --json",
@@ -34,7 +34,7 @@
   ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
    "fa77a35a41db35c0"],
   ["C:\\Users\\Anubhav\\Downloads\\Lean4\\Arithmetic_Formalization\\Arithmetic_Formalization\\Visualization\\basicsWidget.lean",
-   "071ec81c47d546be"],
+   "418dd3fcd8166055"],
   ["options",
    [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
     ["-Dweak.linter.mathlibStandardSet=true", "8a155799906f2b42"],
@@ -45,4 +45,4 @@
    "b2af0ba1d384ace4"],
   ["Package.id?: (some Arithmetic_Formalization)", "f3655d0ef3df9223"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "10b383f50b4f79d0"}
+ "depHash": "8e7aa0764a7c9380"}

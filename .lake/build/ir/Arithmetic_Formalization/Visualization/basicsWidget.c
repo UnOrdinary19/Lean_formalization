@@ -171,6 +171,117 @@ LEAN_EXPORT lean_object* lp_Arithmetic__Formalization___private_Arithmetic__Form
 LEAN_EXPORT lean_object* lp_Arithmetic__Formalization___private_Arithmetic__Formalization_Visualization_basicsWidget_0__fromNat_match__1_splitter___redArg___boxed(lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_Arithmetic__Formalization___private_Arithmetic__Formalization_Visualization_basicsWidget_0__fromNat_match__1_splitter(lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_Arithmetic__Formalization___private_Arithmetic__Formalization_Visualization_basicsWidget_0__fromNat_match__1_splitter___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+static const lean_string_object lp_Arithmetic__Formalization_digitBoxActive___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 17, .m_capacity = 17, .m_length = 16, .m_data = "2px solid yellow"};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__0 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__0_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxActive___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 3}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__0_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__1 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__1_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxActive___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__6_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__1_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__2 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__2_value;
+static const lean_string_object lp_Arithmetic__Formalization_digitBoxActive___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 7, .m_capacity = 7, .m_length = 6, .m_data = "yellow"};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__3 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__3_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxActive___closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 3}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__3_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__4 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__4_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxActive___closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__26_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__4_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__5 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__5_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxActive___closed__6_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__5_value),((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__39_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__6 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__6_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxActive___closed__7_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__25_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__6_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__7 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__7_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxActive___closed__8_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__21_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__7_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__8 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__8_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxActive___closed__9_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__19_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__8_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__9 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__9_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxActive___closed__10_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__15_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__9_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__10 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__10_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxActive___closed__11_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__13_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__10_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__11 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__11_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxActive___closed__12_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__2_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__11_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__12 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__12_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxActive___closed__13_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__5_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__12_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__13 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxActive___closed__13_value;
+static lean_once_cell_t lp_Arithmetic__Formalization_digitBoxActive___closed__14_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__14;
+static lean_once_cell_t lp_Arithmetic__Formalization_digitBoxActive___closed__15_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__15;
+static lean_once_cell_t lp_Arithmetic__Formalization_digitBoxActive___closed__16_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_Arithmetic__Formalization_digitBoxActive___closed__16;
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_digitBoxActive(lean_object*);
+static const lean_string_object lp_Arithmetic__Formalization_digitBoxInactive___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 15, .m_capacity = 15, .m_length = 14, .m_data = "2px solid gray"};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__0 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__0_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxInactive___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 3}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__0_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__1 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__1_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxInactive___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__6_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__1_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__2 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__2_value;
+static const lean_string_object lp_Arithmetic__Formalization_digitBoxInactive___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 5, .m_capacity = 5, .m_length = 4, .m_data = "gray"};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__3 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__3_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxInactive___closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 3}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__3_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__4 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__4_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxInactive___closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__26_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__4_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__5 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__5_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxInactive___closed__6_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__5_value),((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__39_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__6 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__6_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxInactive___closed__7_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__25_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__6_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__7 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__7_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxInactive___closed__8_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__21_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__7_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__8 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__8_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxInactive___closed__9_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__19_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__8_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__9 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__9_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxInactive___closed__10_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__15_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__9_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__10 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__10_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxInactive___closed__11_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__13_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__10_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__11 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__11_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxInactive___closed__12_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__2_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__11_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__12 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__12_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_digitBoxInactive___closed__13_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_digitBox___closed__5_value),((lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__12_value)}};
+static const lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__13 = (const lean_object*)&lp_Arithmetic__Formalization_digitBoxInactive___closed__13_value;
+static lean_once_cell_t lp_Arithmetic__Formalization_digitBoxInactive___closed__14_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__14;
+static lean_once_cell_t lp_Arithmetic__Formalization_digitBoxInactive___closed__15_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__15;
+static lean_once_cell_t lp_Arithmetic__Formalization_digitBoxInactive___closed__16_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_Arithmetic__Formalization_digitBoxInactive___closed__16;
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_digitBoxInactive(lean_object*);
+lean_object* lean_array_to_list(lean_object*);
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_List_mapIdx_go___at___00numberRowStepped_spec__0(lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* lean_array_get_size(lean_object*);
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_List_mapIdx_go___at___00numberRowStepped_spec__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+static lean_once_cell_t lp_Arithmetic__Formalization_numberRowStepped___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_Arithmetic__Formalization_numberRowStepped___closed__0;
+static const lean_ctor_object lp_Arithmetic__Formalization_numberRowStepped___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_numberRow___closed__10_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_Arithmetic__Formalization_numberRowStepped___closed__1 = (const lean_object*)&lp_Arithmetic__Formalization_numberRowStepped___closed__1_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_numberRowStepped___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_numberRow___closed__6_value),((lean_object*)&lp_Arithmetic__Formalization_numberRowStepped___closed__1_value)}};
+static const lean_object* lp_Arithmetic__Formalization_numberRowStepped___closed__2 = (const lean_object*)&lp_Arithmetic__Formalization_numberRowStepped___closed__2_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_numberRowStepped___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_numberRow___closed__2_value),((lean_object*)&lp_Arithmetic__Formalization_numberRowStepped___closed__2_value)}};
+static const lean_object* lp_Arithmetic__Formalization_numberRowStepped___closed__3 = (const lean_object*)&lp_Arithmetic__Formalization_numberRowStepped___closed__3_value;
+static lean_once_cell_t lp_Arithmetic__Formalization_numberRowStepped___closed__4_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_Arithmetic__Formalization_numberRowStepped___closed__4;
+static lean_once_cell_t lp_Arithmetic__Formalization_numberRowStepped___closed__5_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_Arithmetic__Formalization_numberRowStepped___closed__5;
+static lean_once_cell_t lp_Arithmetic__Formalization_numberRowStepped___closed__6_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_Arithmetic__Formalization_numberRowStepped___closed__6;
+lean_object* l_List_lengthTR___redArg(lean_object*);
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_numberRowStepped(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_numberRowStepped___boxed(lean_object*, lean_object*);
+static lean_once_cell_t lp_Arithmetic__Formalization_toNatPrefix___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_Arithmetic__Formalization_toNatPrefix___closed__0;
+lean_object* l___private_Init_Data_List_Impl_0__List_takeTR_go___redArg(lean_object*, lean_object*, lean_object*, lean_object*);
+lean_object* lp_Arithmetic__Formalization_toNat(lean_object*);
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_toNatPrefix(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_resultBoxComputed(lean_object*);
+static const lean_string_object lp_Arithmetic__Formalization_resultBoxUnknown___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 2, .m_capacity = 2, .m_length = 1, .m_data = "\?"};
+static const lean_object* lp_Arithmetic__Formalization_resultBoxUnknown___closed__0 = (const lean_object*)&lp_Arithmetic__Formalization_resultBoxUnknown___closed__0_value;
+static const lean_ctor_object lp_Arithmetic__Formalization_resultBoxUnknown___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 1}, .m_objs = {((lean_object*)&lp_Arithmetic__Formalization_resultBoxUnknown___closed__0_value)}};
+static const lean_object* lp_Arithmetic__Formalization_resultBoxUnknown___closed__1 = (const lean_object*)&lp_Arithmetic__Formalization_resultBoxUnknown___closed__1_value;
+static lean_once_cell_t lp_Arithmetic__Formalization_resultBoxUnknown___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_Arithmetic__Formalization_resultBoxUnknown___closed__2;
+static lean_once_cell_t lp_Arithmetic__Formalization_resultBoxUnknown___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_Arithmetic__Formalization_resultBoxUnknown___closed__3;
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_resultBoxUnknown;
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_List_mapIdx_go___at___00resultRowStepped_spec__0(lean_object*, lean_object*, lean_object*, lean_object*);
+uint8_t lean_nat_dec_le(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_List_mapIdx_go___at___00resultRowStepped_spec__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_resultRowStepped(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_resultRowStepped___boxed(lean_object*, lean_object*);
 static lean_object* _init_lp_Arithmetic__Formalization_digitBox___closed__48(void) {
 _start:
 {
@@ -434,6 +545,391 @@ lean_dec(x_2);
 return x_5;
 }
 }
+static lean_object* _init_lp_Arithmetic__Formalization_digitBoxActive___closed__14(void) {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = ((lean_object*)(lp_Arithmetic__Formalization_digitBoxActive___closed__13));
+x_2 = l_Lean_Json_mkObj(x_1);
+return x_2;
+}
+}
+static lean_object* _init_lp_Arithmetic__Formalization_digitBoxActive___closed__15(void) {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_obj_once(&lp_Arithmetic__Formalization_digitBoxActive___closed__14, &lp_Arithmetic__Formalization_digitBoxActive___closed__14_once, _init_lp_Arithmetic__Formalization_digitBoxActive___closed__14);
+x_2 = ((lean_object*)(lp_Arithmetic__Formalization_digitBox___closed__1));
+x_3 = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(x_3, 0, x_2);
+lean_ctor_set(x_3, 1, x_1);
+return x_3;
+}
+}
+static lean_object* _init_lp_Arithmetic__Formalization_digitBoxActive___closed__16(void) {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_obj_once(&lp_Arithmetic__Formalization_digitBoxActive___closed__15, &lp_Arithmetic__Formalization_digitBoxActive___closed__15_once, _init_lp_Arithmetic__Formalization_digitBoxActive___closed__15);
+x_2 = lean_obj_once(&lp_Arithmetic__Formalization_digitBox___closed__50, &lp_Arithmetic__Formalization_digitBox___closed__50_once, _init_lp_Arithmetic__Formalization_digitBox___closed__50);
+x_3 = lean_array_push(x_2, x_1);
+return x_3;
+}
+}
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_digitBoxActive(lean_object* x_1) {
+_start:
+{
+lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; 
+x_2 = ((lean_object*)(lp_Arithmetic__Formalization_digitBox___closed__0));
+x_3 = lean_obj_once(&lp_Arithmetic__Formalization_digitBox___closed__50, &lp_Arithmetic__Formalization_digitBox___closed__50_once, _init_lp_Arithmetic__Formalization_digitBox___closed__50);
+x_4 = lean_obj_once(&lp_Arithmetic__Formalization_digitBoxActive___closed__16, &lp_Arithmetic__Formalization_digitBoxActive___closed__16_once, _init_lp_Arithmetic__Formalization_digitBoxActive___closed__16);
+x_5 = l_Nat_reprFast(x_1);
+x_6 = lean_alloc_ctor(1, 1, 0);
+lean_ctor_set(x_6, 0, x_5);
+x_7 = lean_array_push(x_3, x_6);
+x_8 = lean_alloc_ctor(0, 3, 0);
+lean_ctor_set(x_8, 0, x_2);
+lean_ctor_set(x_8, 1, x_4);
+lean_ctor_set(x_8, 2, x_7);
+return x_8;
+}
+}
+static lean_object* _init_lp_Arithmetic__Formalization_digitBoxInactive___closed__14(void) {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = ((lean_object*)(lp_Arithmetic__Formalization_digitBoxInactive___closed__13));
+x_2 = l_Lean_Json_mkObj(x_1);
+return x_2;
+}
+}
+static lean_object* _init_lp_Arithmetic__Formalization_digitBoxInactive___closed__15(void) {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_obj_once(&lp_Arithmetic__Formalization_digitBoxInactive___closed__14, &lp_Arithmetic__Formalization_digitBoxInactive___closed__14_once, _init_lp_Arithmetic__Formalization_digitBoxInactive___closed__14);
+x_2 = ((lean_object*)(lp_Arithmetic__Formalization_digitBox___closed__1));
+x_3 = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(x_3, 0, x_2);
+lean_ctor_set(x_3, 1, x_1);
+return x_3;
+}
+}
+static lean_object* _init_lp_Arithmetic__Formalization_digitBoxInactive___closed__16(void) {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_obj_once(&lp_Arithmetic__Formalization_digitBoxInactive___closed__15, &lp_Arithmetic__Formalization_digitBoxInactive___closed__15_once, _init_lp_Arithmetic__Formalization_digitBoxInactive___closed__15);
+x_2 = lean_obj_once(&lp_Arithmetic__Formalization_digitBox___closed__50, &lp_Arithmetic__Formalization_digitBox___closed__50_once, _init_lp_Arithmetic__Formalization_digitBox___closed__50);
+x_3 = lean_array_push(x_2, x_1);
+return x_3;
+}
+}
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_digitBoxInactive(lean_object* x_1) {
+_start:
+{
+lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; 
+x_2 = ((lean_object*)(lp_Arithmetic__Formalization_digitBox___closed__0));
+x_3 = lean_obj_once(&lp_Arithmetic__Formalization_digitBox___closed__50, &lp_Arithmetic__Formalization_digitBox___closed__50_once, _init_lp_Arithmetic__Formalization_digitBox___closed__50);
+x_4 = lean_obj_once(&lp_Arithmetic__Formalization_digitBoxInactive___closed__16, &lp_Arithmetic__Formalization_digitBoxInactive___closed__16_once, _init_lp_Arithmetic__Formalization_digitBoxInactive___closed__16);
+x_5 = l_Nat_reprFast(x_1);
+x_6 = lean_alloc_ctor(1, 1, 0);
+lean_ctor_set(x_6, 0, x_5);
+x_7 = lean_array_push(x_3, x_6);
+x_8 = lean_alloc_ctor(0, 3, 0);
+lean_ctor_set(x_8, 0, x_2);
+lean_ctor_set(x_8, 1, x_4);
+lean_ctor_set(x_8, 2, x_7);
+return x_8;
+}
+}
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_List_mapIdx_go___at___00numberRowStepped_spec__0(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4) {
+_start:
+{
+if (lean_obj_tag(x_3) == 0)
+{
+lean_object* x_5; 
+x_5 = lean_array_to_list(x_4);
+return x_5;
+}
+else
+{
+lean_object* x_6; lean_object* x_7; lean_object* x_8; lean_object* x_12; lean_object* x_13; uint8_t x_14; 
+x_6 = lean_ctor_get(x_3, 0);
+lean_inc(x_6);
+x_7 = lean_ctor_get(x_3, 1);
+lean_inc(x_7);
+lean_dec_ref(x_3);
+x_12 = lean_array_get_size(x_4);
+x_13 = lean_nat_sub(x_1, x_12);
+x_14 = lean_nat_dec_eq(x_13, x_2);
+lean_dec(x_13);
+if (x_14 == 0)
+{
+lean_object* x_15; 
+x_15 = lp_Arithmetic__Formalization_digitBoxInactive(x_6);
+x_8 = x_15;
+goto block_11;
+}
+else
+{
+lean_object* x_16; 
+x_16 = lp_Arithmetic__Formalization_digitBoxActive(x_6);
+x_8 = x_16;
+goto block_11;
+}
+block_11:
+{
+lean_object* x_9; 
+x_9 = lean_array_push(x_4, x_8);
+x_3 = x_7;
+x_4 = x_9;
+goto _start;
+}
+}
+}
+}
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_List_mapIdx_go___at___00numberRowStepped_spec__0___boxed(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4) {
+_start:
+{
+lean_object* x_5; 
+x_5 = lp_Arithmetic__Formalization_List_mapIdx_go___at___00numberRowStepped_spec__0(x_1, x_2, x_3, x_4);
+lean_dec(x_2);
+lean_dec(x_1);
+return x_5;
+}
+}
+static lean_object* _init_lp_Arithmetic__Formalization_numberRowStepped___closed__0(void) {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = lean_unsigned_to_nat(0u);
+x_2 = lean_mk_empty_array_with_capacity(x_1);
+return x_2;
+}
+}
+static lean_object* _init_lp_Arithmetic__Formalization_numberRowStepped___closed__4(void) {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = ((lean_object*)(lp_Arithmetic__Formalization_numberRowStepped___closed__3));
+x_2 = l_Lean_Json_mkObj(x_1);
+return x_2;
+}
+}
+static lean_object* _init_lp_Arithmetic__Formalization_numberRowStepped___closed__5(void) {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_obj_once(&lp_Arithmetic__Formalization_numberRowStepped___closed__4, &lp_Arithmetic__Formalization_numberRowStepped___closed__4_once, _init_lp_Arithmetic__Formalization_numberRowStepped___closed__4);
+x_2 = ((lean_object*)(lp_Arithmetic__Formalization_digitBox___closed__1));
+x_3 = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(x_3, 0, x_2);
+lean_ctor_set(x_3, 1, x_1);
+return x_3;
+}
+}
+static lean_object* _init_lp_Arithmetic__Formalization_numberRowStepped___closed__6(void) {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_obj_once(&lp_Arithmetic__Formalization_numberRowStepped___closed__5, &lp_Arithmetic__Formalization_numberRowStepped___closed__5_once, _init_lp_Arithmetic__Formalization_numberRowStepped___closed__5);
+x_2 = lean_obj_once(&lp_Arithmetic__Formalization_digitBox___closed__50, &lp_Arithmetic__Formalization_digitBox___closed__50_once, _init_lp_Arithmetic__Formalization_digitBox___closed__50);
+x_3 = lean_array_push(x_2, x_1);
+return x_3;
+}
+}
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_numberRowStepped(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+lean_object* x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; lean_object* x_9; lean_object* x_10; lean_object* x_11; lean_object* x_12; 
+x_3 = l_List_lengthTR___redArg(x_1);
+x_4 = lean_unsigned_to_nat(1u);
+x_5 = lean_nat_sub(x_3, x_4);
+lean_dec(x_3);
+x_6 = l_List_reverse___redArg(x_1);
+x_7 = lean_obj_once(&lp_Arithmetic__Formalization_numberRowStepped___closed__0, &lp_Arithmetic__Formalization_numberRowStepped___closed__0_once, _init_lp_Arithmetic__Formalization_numberRowStepped___closed__0);
+x_8 = lp_Arithmetic__Formalization_List_mapIdx_go___at___00numberRowStepped_spec__0(x_5, x_2, x_6, x_7);
+lean_dec(x_5);
+x_9 = lean_array_mk(x_8);
+x_10 = ((lean_object*)(lp_Arithmetic__Formalization_digitBox___closed__0));
+x_11 = lean_obj_once(&lp_Arithmetic__Formalization_numberRowStepped___closed__6, &lp_Arithmetic__Formalization_numberRowStepped___closed__6_once, _init_lp_Arithmetic__Formalization_numberRowStepped___closed__6);
+x_12 = lean_alloc_ctor(0, 3, 0);
+lean_ctor_set(x_12, 0, x_10);
+lean_ctor_set(x_12, 1, x_11);
+lean_ctor_set(x_12, 2, x_9);
+return x_12;
+}
+}
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_numberRowStepped___boxed(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+lean_object* x_3; 
+x_3 = lp_Arithmetic__Formalization_numberRowStepped(x_1, x_2);
+lean_dec(x_2);
+return x_3;
+}
+}
+static lean_object* _init_lp_Arithmetic__Formalization_toNatPrefix___closed__0(void) {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = lean_unsigned_to_nat(0u);
+x_2 = lean_mk_empty_array_with_capacity(x_1);
+return x_2;
+}
+}
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_toNatPrefix(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+lean_object* x_3; lean_object* x_4; lean_object* x_5; 
+x_3 = lean_obj_once(&lp_Arithmetic__Formalization_toNatPrefix___closed__0, &lp_Arithmetic__Formalization_toNatPrefix___closed__0_once, _init_lp_Arithmetic__Formalization_toNatPrefix___closed__0);
+lean_inc(x_1);
+x_4 = l___private_Init_Data_List_Impl_0__List_takeTR_go___redArg(x_1, x_1, x_2, x_3);
+lean_dec(x_1);
+x_5 = lp_Arithmetic__Formalization_toNat(x_4);
+lean_dec(x_4);
+return x_5;
+}
+}
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_resultBoxComputed(lean_object* x_1) {
+_start:
+{
+lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; 
+x_2 = ((lean_object*)(lp_Arithmetic__Formalization_digitBox___closed__0));
+x_3 = lean_obj_once(&lp_Arithmetic__Formalization_digitBox___closed__50, &lp_Arithmetic__Formalization_digitBox___closed__50_once, _init_lp_Arithmetic__Formalization_digitBox___closed__50);
+x_4 = lean_obj_once(&lp_Arithmetic__Formalization_digitBoxActive___closed__16, &lp_Arithmetic__Formalization_digitBoxActive___closed__16_once, _init_lp_Arithmetic__Formalization_digitBoxActive___closed__16);
+x_5 = l_Nat_reprFast(x_1);
+x_6 = lean_alloc_ctor(1, 1, 0);
+lean_ctor_set(x_6, 0, x_5);
+x_7 = lean_array_push(x_3, x_6);
+x_8 = lean_alloc_ctor(0, 3, 0);
+lean_ctor_set(x_8, 0, x_2);
+lean_ctor_set(x_8, 1, x_4);
+lean_ctor_set(x_8, 2, x_7);
+return x_8;
+}
+}
+static lean_object* _init_lp_Arithmetic__Formalization_resultBoxUnknown___closed__2(void) {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = ((lean_object*)(lp_Arithmetic__Formalization_resultBoxUnknown___closed__1));
+x_2 = lean_obj_once(&lp_Arithmetic__Formalization_digitBox___closed__50, &lp_Arithmetic__Formalization_digitBox___closed__50_once, _init_lp_Arithmetic__Formalization_digitBox___closed__50);
+x_3 = lean_array_push(x_2, x_1);
+return x_3;
+}
+}
+static lean_object* _init_lp_Arithmetic__Formalization_resultBoxUnknown___closed__3(void) {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = lean_obj_once(&lp_Arithmetic__Formalization_resultBoxUnknown___closed__2, &lp_Arithmetic__Formalization_resultBoxUnknown___closed__2_once, _init_lp_Arithmetic__Formalization_resultBoxUnknown___closed__2);
+x_2 = lean_obj_once(&lp_Arithmetic__Formalization_digitBoxInactive___closed__16, &lp_Arithmetic__Formalization_digitBoxInactive___closed__16_once, _init_lp_Arithmetic__Formalization_digitBoxInactive___closed__16);
+x_3 = ((lean_object*)(lp_Arithmetic__Formalization_digitBox___closed__0));
+x_4 = lean_alloc_ctor(0, 3, 0);
+lean_ctor_set(x_4, 0, x_3);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_1);
+return x_4;
+}
+}
+static lean_object* _init_lp_Arithmetic__Formalization_resultBoxUnknown(void) {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_obj_once(&lp_Arithmetic__Formalization_resultBoxUnknown___closed__3, &lp_Arithmetic__Formalization_resultBoxUnknown___closed__3_once, _init_lp_Arithmetic__Formalization_resultBoxUnknown___closed__3);
+return x_1;
+}
+}
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_List_mapIdx_go___at___00resultRowStepped_spec__0(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4) {
+_start:
+{
+if (lean_obj_tag(x_3) == 0)
+{
+lean_object* x_5; 
+x_5 = lean_array_to_list(x_4);
+return x_5;
+}
+else
+{
+lean_object* x_6; lean_object* x_7; lean_object* x_8; lean_object* x_12; lean_object* x_13; uint8_t x_14; 
+x_6 = lean_ctor_get(x_3, 0);
+lean_inc(x_6);
+x_7 = lean_ctor_get(x_3, 1);
+lean_inc(x_7);
+lean_dec_ref(x_3);
+x_12 = lean_array_get_size(x_4);
+x_13 = lean_nat_sub(x_1, x_12);
+x_14 = lean_nat_dec_le(x_13, x_2);
+lean_dec(x_13);
+if (x_14 == 0)
+{
+lean_object* x_15; 
+lean_dec(x_6);
+x_15 = lp_Arithmetic__Formalization_resultBoxUnknown;
+x_8 = x_15;
+goto block_11;
+}
+else
+{
+lean_object* x_16; 
+x_16 = lp_Arithmetic__Formalization_resultBoxComputed(x_6);
+x_8 = x_16;
+goto block_11;
+}
+block_11:
+{
+lean_object* x_9; 
+x_9 = lean_array_push(x_4, x_8);
+x_3 = x_7;
+x_4 = x_9;
+goto _start;
+}
+}
+}
+}
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_List_mapIdx_go___at___00resultRowStepped_spec__0___boxed(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4) {
+_start:
+{
+lean_object* x_5; 
+x_5 = lp_Arithmetic__Formalization_List_mapIdx_go___at___00resultRowStepped_spec__0(x_1, x_2, x_3, x_4);
+lean_dec(x_2);
+lean_dec(x_1);
+return x_5;
+}
+}
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_resultRowStepped(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+lean_object* x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; lean_object* x_9; lean_object* x_10; lean_object* x_11; lean_object* x_12; 
+x_3 = l_List_lengthTR___redArg(x_1);
+x_4 = lean_unsigned_to_nat(1u);
+x_5 = lean_nat_sub(x_3, x_4);
+lean_dec(x_3);
+x_6 = l_List_reverse___redArg(x_1);
+x_7 = lean_obj_once(&lp_Arithmetic__Formalization_numberRowStepped___closed__0, &lp_Arithmetic__Formalization_numberRowStepped___closed__0_once, _init_lp_Arithmetic__Formalization_numberRowStepped___closed__0);
+x_8 = lp_Arithmetic__Formalization_List_mapIdx_go___at___00resultRowStepped_spec__0(x_5, x_2, x_6, x_7);
+lean_dec(x_5);
+x_9 = lean_array_mk(x_8);
+x_10 = ((lean_object*)(lp_Arithmetic__Formalization_digitBox___closed__0));
+x_11 = lean_obj_once(&lp_Arithmetic__Formalization_numberRowStepped___closed__6, &lp_Arithmetic__Formalization_numberRowStepped___closed__6_once, _init_lp_Arithmetic__Formalization_numberRowStepped___closed__6);
+x_12 = lean_alloc_ctor(0, 3, 0);
+lean_ctor_set(x_12, 0, x_10);
+lean_ctor_set(x_12, 1, x_11);
+lean_ctor_set(x_12, 2, x_9);
+return x_12;
+}
+}
+LEAN_EXPORT lean_object* lp_Arithmetic__Formalization_resultRowStepped___boxed(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+lean_object* x_3; 
+x_3 = lp_Arithmetic__Formalization_resultRowStepped(x_1, x_2);
+lean_dec(x_2);
+return x_3;
+}
+}
 lean_object* initialize_Init(uint8_t builtin);
 lean_object* initialize_proofwidgets_ProofWidgets(uint8_t builtin);
 lean_object* initialize_Arithmetic__Formalization_Arithmetic__Formalization_Foundations(uint8_t builtin);
@@ -451,6 +947,8 @@ lean_dec_ref(res);
 res = initialize_Arithmetic__Formalization_Arithmetic__Formalization_Foundations(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
+lp_Arithmetic__Formalization_resultBoxUnknown = _init_lp_Arithmetic__Formalization_resultBoxUnknown();
+lean_mark_persistent(lp_Arithmetic__Formalization_resultBoxUnknown);
 return lean_io_result_mk_ok(lean_box(0));
 }
 #ifdef __cplusplus
